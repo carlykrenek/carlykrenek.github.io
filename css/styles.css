@@ -1,0 +1,208 @@
+/*Fur Friends Hompage*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /*font-family:'Urbanist', sans-serif;*/
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: #FAFDFF;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #8a6d3b;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #032539;
+    display: block;
+    font-family: Urbanist, sans-serif;
+    font-weight: 400;
+}
+
+header .navbar ul li a:hover{
+    background: #F2F4F5;
+    color: #032539;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left:0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: #032539;
+    cursor: pointer;
+    display: none;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.homehero {
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    z-index: 0;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    font-family: Urbanist, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    color: #032539
+}
+
+section.homehero img {
+    width: 100vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+.button1{
+    background-color: #FA991C;
+    font-size: 16px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 16px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    border: none;
+    color: #FAFDFF;
+    transform:translateY(33vw);
+}
+
+
+.hero-heading {
+    font-size: 34px;
+    transform:translateY(33vw);
+    font-weight: 700;
+    font-family: Urbanist, sans-serif;
+    color: #032539;
+    letter-spacing: 2px;
+    padding: 15px 0;
+}
+
+section.main-content p {
+    width: 75%;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 144px 0;
+}
+
+.main-content {
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FAFDFF;
+    padding: 0px;
+    letter-spacing: 1px;
+    line-height: 140%;
+    text-align: center;
+    background-color: #032539;
+
+}
+
+
+
+/*Tablet size*/
+@media(max-width:991px){
+
+    header{
+        padding: 20px;
+    }
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: #eee;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
+}
+
+
