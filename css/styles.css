@@ -9,13 +9,59 @@
 
 body{
     min-height: 100vh;
-    background: url() no-repeat;
-    background-size: cover;
-    background-position: center;
+
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #032539;
+}
+
+.top-bar span{
+    color: #FAFDFF;
+    font-size: 16px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 400;
+    margin-left: 64px;
+}
+
+.top-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.donatebutton{
+    display: flex;
+    background-color: #E31C3D;
+    font-size: 18px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 64px;
+    border: none;
+    color: #FAFDFF;
+}
+
+iconify-icon{
+    padding: 2px 0px 0px 10px;
+}
+
+.top-bar li{
+    margin: 0 5px;
+}
+
+.top-bar a{
+    color: #FAFDFF;
 }
 
 header{
-    position: fixed;
+    position: relative;
     top:0;
     left:0;
     right:0;
@@ -26,12 +72,6 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-}
-
-header .logo{
-    font-weight: bolder;
-    font-size: 25px;
-    color: #8a6d3b;
 }
 
 header .navbar ul{
@@ -126,14 +166,30 @@ section.homehero img {
     display: block;
     margin: auto;
     border: none;
-    color: #FAFDFF;
-    transform:translateY(33vw);
+    color: #032539;
+    transform:translateY(35vw);
+    cursor: pointer;
 }
 
+.button2{
+    background-color: #FA991C;
+    font-size: 16px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 16px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    color: #032539;
+    cursor: pointer;
+}
 
 .hero-heading {
     font-size: 34px;
-    transform:translateY(33vw);
+    transform:translateY(36vw);
     font-weight: 700;
     font-family: Urbanist, sans-serif;
     color: #032539;
@@ -147,7 +203,7 @@ section.main-content p {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding: 144px 0;
+    padding: 120px 0;
 }
 
 .main-content {
@@ -160,10 +216,560 @@ section.main-content p {
     line-height: 140%;
     text-align: center;
     background-color: #032539;
+}
 
+section.featured-friend p {
+    width: 90%;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px 64px 25px 0;
+    line-height: 140%;
+}
+
+.featured-friend{
+    background-color: #FAFDFF;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color:  #032539;
+    padding: 0px;
+    letter-spacing: 1px;
+    line-height: 140%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.image {
+    flex-basis: 100%;
+}
+
+.image1{
+    object-fit: cover;
+    width:300px;
+    height:300px;
+    margin: 10px;
+    border:20px solid #03989E;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    -ms-border-radius: 300px;
+    -o-border-radius: 300px;
+    border-radius: 300px;
+}
+
+h1.featured-friend-heading{
+    font-size: 48px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 800;
+    padding: 120px 64px 20px 0;
+}
+
+h2.featured-friend-subheading{
+    font-size: 24px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    padding: 0px 64px 5px 0;
+}
+
+.text {
+    font-size: 16px;
+    padding-left: 0px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.support-section{
+    background-color: #032539;
+    color: #FAFDFF;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 140%;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center
+}
+
+h1.support-section-heading{
+    font-size: 48px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    padding: 60px;
+}
+
+.image2{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 10px solid #03989E;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+}
+
+.container1{
+    display: flex;
+    margin: 0 64px;
+}
+
+.support{
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    padding: 0px;
+    line-height: 141%;
+    letter-spacing: 1px;
+}
+
+div.support p{
+    padding: 20px;
+}
+
+.available-section{
+    background-color: #FAFDFF;
+    color: #032539;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 140%;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center
+}
+
+h1.available-section-heading{
+    font-size: 48px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    padding: 60px 20px 20px;
+}
+
+h3.available-section-subheading{
+    font-size: 24px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    padding: 20px 20px 0 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.container2{
+    width: 80%;
+    margin: 50px auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-gap: 30px;
+}
+
+.card1{
+    background-color: #FAFDFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border: 8px solid #032539;
+    overflow: hidden;
+}
+
+.image-section{
+    height: 250px;
+    background-color: #FAFDFF;
+}
+
+.card1 .img-one{
+    background-image: url("../images/cookie2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-two{
+    background-image: url("../images/jax.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-three{
+    background-image: url("../images/hutch.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-four{
+    background-image: url("../images/misha.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    padding: 15px 20px 0;
+}
+
+.content h3 {
+    font-family: Urbanist, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.content h4{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: medium;
+    color: #FA991C;
+    text-align: left;
+}
+
+.content p{
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    text-align: left;
+    line-height: 150%;
+}
+
+.content iconify-icon {
+    padding: 0;
+}
+
+.content .button3{
+    background-color: #FA991C;
+    font-size: 14px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 14px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    color: #032539;
+    cursor: pointer;
+}
+
+.button3 iconify-icon{
+    padding: 2px 0px 0px 10px;
+}
+
+.container3{
+    border-radius: 14px;
+    background-color: #032539;
+    display: flow-root;
+    width: 80%;
+    margin: auto;
+}
+
+.container3 p{
+    font-family: Urbanist, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FAFDFF;
+    padding: 40px 40px 20px 40px;
+}
+
+.button4{
+    background-color: #FAFDFF;
+    font-size: 16px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 16px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0px auto 40px auto;
+    border: 1.5px solid  #FA991C;
+    color:  #FA991C;
+    cursor: pointer;
+}
+
+.resource-section{
+    background-color: #F2F4F5;
+    color: #032539;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 140%;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center
+}
+
+.resource-section h1{
+    font-size: 48px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    padding: 60px 20px 20px;
+}
+
+.resource-section h3{
+    font-size: 24px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    padding: 20px 20px 0 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.container4{
+    width: 60%;
+    margin: 50px auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-gap: 30px;
+}
+
+.card2{
+    background-color: #032539;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    color: #FAFDFF;
+    padding: 20px 0 0 0;
+}
+
+.card2-content{
+    margin: auto;
+    padding: 0 0 10px 0;
+}
+
+.card2-content h3 {
+    font-family: Urbanist, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+.card2-content p{
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    line-height: 150%;
+}
+
+.card2-content .button3{
+    background-color: #FA991C;
+    font-size: 14px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 14px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    color: #032539;
+    cursor: pointer;
+}
+
+.card2 .image2{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 10px solid #03989E;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+}
+
+.celebration-section div.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 4px;
+    justify-content: center;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+.celebration-section h1{
+    font-size: 48px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    padding: 60px 20px 20px;
+}
+
+.celebration-section h3{
+    font-size: 24px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    padding: 20px 20px 0 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.celebration-section{
+    background-color: #FAFDFF;
+    color: #032539;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 140%;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center
+}
+
+.donate-section{
+    background-color: #F2F4F5;
+    color: #032539;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 140%;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center
+}
+
+.donate-animal-img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.donate-section .donatebutton{
+    margin: 50px auto ;
+}
+
+footer {
+    background: #032539;
+    width: 100vw;
+    color: #FAFDFF;
+    text-align: center;
+    padding: 10px 0px 10px;
+}
+
+.quick-links {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.link a{
+    font-size: 20px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FAFDFF;
+}
+
+.furfriends-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.footer-info p{
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FAFDFF;
+    line-height: 150%;
+    padding: 20px 0 0 0;
+}
+
+.footer-info h3{
+    font-size: 20px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    color: #FAFDFF;
+}
+
+.social-media h3{
+    font-size: 20px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    color: #FAFDFF;
+    padding: 60px 0 20px 0;
+}
+
+.social-media ul{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li{
+    list-style-type: none;
+}
+
+.footer-section{
+    padding: 40px;
+}
+
+div.quick-links{
+    padding: 40px 0 60px 0;
+}
+
+hr{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    height: 1px;
+    background-color:#FAFDFF;
+    opacity: 10%;
 }
 
 
+
+
+
+@media (min-width: 600px) {
+    .quick-links { grid-template-columns: repeat(2, 1fr); }
+    .furfriends-info { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .quick-links { grid-template-columns: repeat(3, 1fr); }
+    .furfriends-info { grid-template-columns: repeat(3, 1fr); }
+}
 
 /*Tablet size*/
 @media(max-width:991px){
@@ -204,5 +810,7 @@ section.main-content p {
     }
 
 }
+
+
 
 
