@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+<div class="top-bar">
+    <span>(802) 878-1758</span>
+    <button class="donatebutton" type="button">Donate<iconify-icon icon="codicon:heart-filled" style="color: #fafdff;"></iconify-icon></button>
+</div>
 <header>
 
     <a href="index.html" class="logo">
@@ -70,5 +75,94 @@
         </ul>
     </nav>
 </header>
+<section class="foster-homehero">
+    <div class="hero-overlay">
+        <h1 class="hero-heading">CONTACT US</h1>
+    </div>
+    <img src="images/contact-us-hero.jpg" alt="Small puppy sitting" class="responsive">
+</section>
+<div class="contact-form-container">
+    <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+            <h3> Fur Friends </h3>
+            <ul>
+                <li><i class="fa map fa-map-marker fa-fw"></i> 264 Browns River Rd, <br>Essex Junction, VT 05452 </li>
+                <li><i class="fa phone fa-phone fa-fw>"></i> (802) 878-1758 </li>
+                <li><i class="fa mail fa-envelope fa-fw"></i> adopt@furfriends.org </li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3> Send us a message </h3>
+            <form id="contactForm" action="" method="" autocomplete="off">
+                <div>
+                    <label>Name *</label>
+                    <span><input id="name" type="text" name="name" required></span>
+                </div>
+                <div>
+                    <label>Email Address *</label>
+                    <span><input id="email" type="email" name="email" required></span>
+                </div>
+                <div>
+                    <label>Phone Number</label>
+                    <span><input id="phone" type="text" name="phone" required placeholder="(xxx) xxx-xxxx"></span>
+                </div>
+                <div>
+                    <label>Company (Optional)</label>
+                    <span><input id="company" type="text" name="comapny"></span>
+                </div>
+                <div class="full">
+                    <label>Message *</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="full">
+                    <button type="submit" name="submit">Submit</button>
+                </div>
+            </form>
+
+            <div class="alert">
+                <p>Sent! Thank you for your message...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-section">
+        <a href="index.html" class="logo">
+            <img class="footer-logo" src="images/furfriendslogo4.png" alt="Fur Friends Logo" class="img-fluid" width="181" height="57">
+        </a>
+        <div class="quick-links">
+            <div class="link"><a href="adopt.html">ADOPT</a></div>
+            <div class="link"><a href="foster.html">FOSTER</a></div>
+            <div class="link"><a href="waystogive.html">WAYS TO GIVE</a></div>
+            <div class="link"><a href="volunteer.html">VOLUNTEER</a></div>
+            <div class="link"><a href="resources.html">RESOURCES</a></div>
+            <div class="link"><a href="aboutus.html">ABOUT US</a></div>
+        </div>
+        <hr>
+        <div class="furfriends-info">
+            <div class="footer-info">
+                <h3>LOCATION</h3>
+                <p>264 Browns River Rd, <br>Essex Junction, VT 05452</p>
+            </div>
+            <div class="footer-info">
+                <h3>HOURS</h3>
+                <p>Monday-Friday:  9:00am-7:00pm <br>Saturday & Sunday: 10:00am-6:00pm</p>
+            </div>
+            <div class="footer-info">
+                <h3>CONTACT US</h3>
+                <p>Phone: 802-878-1758 <br>Email: adopt@furfriends.org</p>
+            </div>
+        </div>
+        <div class="social-media">
+            <h3>FOLLOW US ON SOCIAL MEDIA</h3>
+            <ul>
+                <li><a href="#"><iconify-icon icon="cib:facebook-f" style="color: #fafdff;" width="18"></iconify-icon></a></li>
+                <li><a href="#"><iconify-icon icon="akar-icons:instagram-fill" style="color: #fafdff;" width="20"></iconify-icon></a></li>
+                <li><a href="#"><iconify-icon icon="akar-icons:twitter-fill" style="color: #fafdff;" width="20"></iconify-icon></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="js/furfriends.js"></script>
 </body>
 </html>
