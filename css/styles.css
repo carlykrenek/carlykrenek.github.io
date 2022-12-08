@@ -890,8 +890,6 @@ section.adoption-process p {
     line-height: 140%;
     text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center
 }
 
 h1.adoption-process-heading{
@@ -917,21 +915,19 @@ span.adoption-process-step{
 }
 
 ul.adoption-process-list{
-    width:max-content;
-    margin-left: auto;
-    margin-right: auto;
     padding: 20px;
+    text-align: left;
+    display: inline-block;
+    max-width: 600px;
 }
 
 .adoption-process-list li{
     list-style-type: none;
-    text-align: left;
     padding: 10px;
 }
 
 .adoption-process-list li iconify-icon {
     position: relative;
-    /* Adjust these values accordingly */
     top: 5px;
     left: 5px;
     padding: 10px 15px 0 0;
@@ -1793,3 +1789,581 @@ input, button, textarea {
     background-size: cover;
     background-position: center;
 }
+
+.card1 .img-11{
+    background-image: url("../images/img-11.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-12{
+    background-image: url("../images/img-12.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-13{
+    background-image: url("../images/img-13.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-14{
+    background-image: url("../images/img-14.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-15{
+    background-image: url("../images/img-15.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-16{
+    background-image: url("../images/img-16.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-17{
+    background-image: url("../images/biscuit.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-18{
+    background-image: url("../images/ralph.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-19{
+    background-image: url("../images/millie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-20{
+    background-image: url("../images/daisy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-21{
+    background-image: url("../images/artemis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-22{
+    background-image: url("../images/flora.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-23{
+    background-image: url("../images/poppy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-24{
+    background-image: url("../images/belatrix.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-25{
+    background-image: url("../images/cleo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Adoption Process & FAQ Page */
+
+#adoption-process-text{
+    padding: 0 0 40px 0;
+    margin: auto;
+}
+
+h3#adoption-faq-subheading.available-section-subheading{
+    padding: 0 0 40px;
+}
+
+.faq-section{
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    background: #FAFDFF;
+    color: #032539;
+}
+
+.faq-section h2{
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    font-family: Urbanist, sans-serif;
+    font-weight: 800;
+    padding: 40px;
+}
+
+.faq-container{
+    max-width: 70%;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 2px solid #fff;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question h3{
+    font-size: 1.4rem;
+    font-family: Urbanist, sans-serif;
+    font-weight: 800;
+}
+
+.question svg{
+    fill: #032539;
+}
+
+.faq-container.active svg{
+    transform: rotate(180deg);
+}
+
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
+    font-family: Roboto, sans-serif;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.2s ease;
+}
+
+.faq-container.active .answer{
+    max-height: 300px;
+    transition: max-height 1.2s ease;
+}
+
+.faq-section hr{
+    opacity: 100%;
+    width: 100%;
+}
+
+
+@media (max-width: 450px){
+
+    .question h3{
+        font-size: .5rem;
+    }
+
+}
+
+@media (max-width: 650px){
+
+    .question h3{
+        font-size: 1rem;
+    }
+
+}
+
+#donate-section-adoption-process{
+    display: block;
+}
+
+#social-media-callout-adoption-process p{
+    margin-bottom: 0;
+}
+
+h1.adoption-process-heading{
+    padding-bottom: 20px;
+}
+
+/* Adoption Policy */
+.policy-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Roboto;
+    background: #FAFDFF;
+    margin: 50px auto 50px auto;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+}
+
+.tabs__head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+
+.tabs__toggle {
+    margin: 0 5px;
+    padding: 7px 25px;
+    background: #fff;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 4px 5px rgba(0,0,0,.1);
+    border-radius: 30px;
+
+}
+
+.tabs__name {
+    font-family: Urbanist, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #032539;
+}
+
+.tabs__body {
+    background: #fff;
+    box-shadow: 0px 4px 5px rgba(0,0,0,.1);
+    padding: 30px;
+    position: relative;
+}
+
+.tabs__title {
+    font-family: Urbanist, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #032539;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p.tabs__text {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: #032539;
+    padding: 20px;
+}
+
+div.tabs__content.is-active ol li{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: #032539;
+    padding: 20px;
+}
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__toggle.is-active {
+    background: #e7eef8;
+}
+
+.tabs__toggle.is-active .tabs__name {
+    color: #032539;
+}
+
+.tabs__content.is-active {
+    display: block;
+}
+
+.adoption-process-cta-button{
+    display: flex;
+    padding: 0px 0 40px 0;
+    justify-content: center;
+}
+
+.adoption-process-cta-button button{
+    margin: 40px;
+}
+
+/* Available Fosters */
+
+.card1 .img-26{
+    background-image: url("../images/sansa-min.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-27{
+    background-image: url("../images/charlie-min.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-28{
+    background-image: url("../images/milo-min.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-29{
+    background-image: url("../images/ace-min.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-30{
+    background-image: url("../images/leo-min.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 .img-31{
+    background-image: url("../images/winnie-min.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#special-care-needed{
+    background-color: #F2F4F5;
+}
+
+/* Thera Foster Program */
+
+#thera-foster-button-1{
+    margin-top: 40px;
+}
+
+#thera-foster-button-2{
+    background-color: #FAFDFF;
+    font-size: 16px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 16px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto 0 auto;
+    border: 1.5px solid  #FA991C;
+    color:  #FA991C;
+    cursor: pointer;
+}
+
+.thera-foster-section{
+    background-color: #FAFDFF;
+    color: #032539;
+    padding: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center
+}
+
+.thera-foster-section h1{
+    text-align: center;
+    padding: 40px;
+}
+
+.thera-foster-section p{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+p.thera-foster-cta {
+    padding: 40px;
+    line-height: 140%;
+}
+
+.thera-foster-donate-cta h3{
+    font-family: Urbanist, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+    padding: 60px 0 40px;
+    color: #032539;
+}
+
+.thera-foster-donate-cta p{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+    padding: 0 0 40px 0;
+    width: 75%;
+    margin: auto;
+    color: #032539;
+}
+
+#thera-foster-donate-btn{
+    margin: auto;
+}
+
+/* Vol. Opportunities */
+
+.quote-section p{
+    font-family: Urbanist, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px;
+    background-color: #F2F4F5;
+    color: #032539;
+}
+
+#animal-care p{
+    text-align: left;
+    width: 85%;
+}
+
+#animal-care h1{
+    font-size: 24px;
+    text-align: left;
+    width: 87%;
+}
+
+#vol-opportunities-section p{
+    padding: 15px 60px 10px 30px;
+}
+
+#shelter-upkeep-opp{
+    background-color: #F2F4F5;
+}
+
+#shelter-upkeep-opp p{
+    text-align: left;
+    width: 85%;
+}
+
+#shelter-upkeep-opp h1{
+    font-size: 24px;
+    text-align: left;
+    width: 87%;
+}
+
+#event-vol-opp{
+    background-color: #F2F4F5;
+
+}
+
+#event-vol-opp p{
+    text-align: left;
+    width: 85%;
+}
+
+#event-vol-opp h1{
+    font-size: 24px;
+    text-align: left;
+    width: 87%;
+}
+
+#vol-opp-donate-section{
+    background-color: #F5F5F5;
+}
+
+#animal-care button.button2{
+    margin: 20px 0 60px 90px;
+}
+
+#shelter-upkeep-opp button.button2{
+    margin: 20px 0 60px 90px;
+}
+
+#event-vol-opp button.button2{
+    margin: 20px 0 60px 90px;
+}
+
+/*Events*/
+
+#fall-barkfest-section{
+    display: block;
+    width: 60%;
+    margin: 0 40px;
+}
+
+#fall-barkfest-section ul{
+    padding:0 0 20px 30px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#fall-barkfest-section ul li{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #032539;
+}
+
+#fall-barkfest-section h1{
+    text-align: left;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+#fall-barkfest-section p{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.fall-barkfest-info{
+    display: flex;
+    text-align: left;
+}
+
+#fall-barkfest-section td{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #032539;
+    padding: 10px;
+    width: max-content;
+}
+
+#fall-barkfest-section table{
+    margin: 0 40px 40px 40px;
+}
+
+#fall-barkfest-section button.button2{
+    margin-left: 0px;
+}
+
+
+
+
+
+
