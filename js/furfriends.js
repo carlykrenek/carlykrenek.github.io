@@ -41,3 +41,5 @@ function submitForm(e) {
 function getInputVal(id) {
     return document.getElementById(id).value;
 }
+
+
