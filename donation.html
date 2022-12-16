@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Fur Friends Animal Shelter">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fur Friends Quick Donation</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="css/donation.css" rel="stylesheet">
+</head>
+<body>
+<div class="top-bar">
+    <a href="index.html"><button class="donatebutton" type="button"><iconify-icon icon="ion:arrow-back-sharp" style="color: #fafdff;"></iconify-icon>
+        Back to Homepage</button></a>
+</div>
+<div class="main">
+<div class="wrapper-1">
+    <a href="#" class="logo">
+        <img src="images/furfriendslogo4.png" alt="Fur Friends Logo" class="img-fluid" width="181" height="57">
+    </a>
+    <div class="donation-description-container">
+        <div class="donation-description">
+            <h3>$25</h3>
+            <p>A $25 donation provides a microchip for two animals. </p>
+        </div>
+        <div class="donation-description">
+            <h3>$50</h3>
+            <p>A $50 donation provides a necessary vaccination for one animal. </p>
+        </div>
+        <div class="donation-description">
+            <h3>$100</h3>
+            <p>A $100 donation provides a spay/neuter procedure for one animal.</p>
+        </div>
+        <div class="donation-description">
+            <h3>$500</h3>
+            <p>A $500 donation provides a heartworm treatment for a dog. Without it a dog with heartworms can suffer heart failure.</p>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="header">
+        <ul>
+            <li class="active form_1_progessbar">
+                <div>
+                    <p>1</p>
+                </div>
+            </li>
+            <li class="form_2_progessbar">
+                <div>
+                    <p>2</p>
+                </div>
+            </li>
+            <li class="form_3_progessbar">
+                <div>
+                    <p>3</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="form_wrap">
+        <div class="form_1 data_info">
+            <h2>Make a Donation</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-one" name="donation-frequency" value="yes" checked/>
+                <label for="radio-one">One-time</label>
+                <input type="radio" id="radio-two" name="donation-frequency" value="no" />
+                <label for="radio-two">Monthly</label>
+            </div>
+            <div class="switch-field-2">
+                <input type="radio" id="radio-three" name="donation-amount" value="yes" checked/>
+                <label for="radio-three">$25</label>
+                <input type="radio" id="radio-four" name="donation-amount" value="no" />
+                <label for="radio-four">$50</label>
+                <input type="radio" id="radio-five" name="donation-amount" value="no" />
+                <label for="radio-five">$100</label>
+                <input type="radio" id="radio-six" name="donation-amount" value="no" />
+                <label for="radio-six">$250</label>
+                <input type="radio" id="radio-seven" name="donation-amount" value="no" />
+                <label for="radio-seven">$500</label>
+                <input type="radio" id="radio-eight" name="donation-amount" value="no" />
+                <label for="radio-eight">$1000</label>
+            </div>
+            <form>
+                <div class="form_container">
+                    <div class="input_wrap">
+                        <label>Custom amount</label>
+                        <input type="text" name="custom_amount" class="input" id="custom-amount">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="form_2 data_info" style="display: none;">
+            <h2>Personal Information</h2>
+            <form>
+                <div class="form_container">
+                    <div class="input_wrap">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="First Name" class="input" id="first_name">
+                    </div>
+                    <div class="input_wrap">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="Last Name" class="input" id="last_name">
+                    </div>
+                    <div class="input_wrap">
+                        <label for="email">Email</label>
+                        <input type="text" name="Email" class="input" id="email">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="form_3 data_info" style="display: none;">
+            <h2>Payment</h2>
+            <form>
+                <div class="form_container">
+                    <div class="input_wrap">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" name="Card Number" class="input" id="card-number">
+                    </div>
+                    <div class="input_wrap">
+                        <label for="expiration-date">Expiration Date</label>
+                        <input type="text" name="Total Experience" class="input" id="expiration-date">
+                    </div>
+                    <div class="input_wrap">
+                        <label for="cvv">CVV</label>
+                        <input type="text" name="Designation" class="input" id="cvv">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="btns_wrap">
+        <div class="common_btns form_1_btns">
+            <button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+        </div>
+        <div class="common_btns form_2_btns" style="display: none;">
+            <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+            <button type="button" class="btn_next">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+        </div>
+        <div class="common_btns form_3_btns" style="display: none;">
+            <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+            <button type="button" class="btn_done">Done</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal_wrapper">
+    <div class="shadow"></div>
+    <div class="success_wrap">
+        <div class="icon-wrapper">
+        <span class="modal_icon"><ion-icon name="heart-sharp"></ion-icon></span>
+        <p>Thank you for making a difference in the lives of our animals!</p>
+        </div>
+        <div class="back-link">
+        <a href="index.html">Back to our homepage</a>
+        </div>
+    </div>
+</div>
+</div>
+<script src="js/donation.js"></script>
+</body>
+</html>
