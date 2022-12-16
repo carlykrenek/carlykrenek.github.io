@@ -1,0 +1,293 @@
+h3{
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    color: #FAFDFF;
+}
+
+p{
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #032539;
+}
+
+input{
+    margin-bottom: 40px;
+}
+
+input, label{
+    display: block;
+}
+
+label{
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #032539;
+}
+
+input#CAT_Custom_2.cat_textbox{
+    display: inline-block;
+}
+
+.app_form {
+    font-family: 'Questrial', sans-serif;
+    width: 85%;
+    border:1px solid #eee;
+    min-height:800px;
+    margin:0 auto;
+    box-shadow: 0 1px 10px #ccc;
+    min-width:300px;
+    line-height:160%;
+}
+
+.app_form h3 {
+    font-size:18pt;
+    background:#032539;
+    max-width:100%;
+    text-align:center;
+    color:#fff;
+    margin:0px;
+    padding:20px;
+}
+
+.app_about_you {
+    width:96%;
+    margin:10px auto;
+    min-height:200px;
+    padding:2% 2% 0 2%;
+}
+
+.app_about_you h3 {
+    text-transform:uppercase;
+    padding:5px;
+    min-width:200px;
+    max-width:210px;
+    font-size:16pt;
+    background:#03989E;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.animal-interest{
+    margin-bottom: 50px;
+}
+
+
+.app_about_you p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:40%;
+    min-width:270px;
+    display:inline-block;
+}
+
+#current-pets{
+    width: 90%;
+    padding: 0;
+}
+
+.app_about_you select {
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance:none;
+    height:40px;
+    padding:3px;
+    text-indent:10px;
+    font-size:12pt;
+    width:270px;
+    border-radius:0px;
+    font-family: 'Oswald', sans-serif;
+    background-image:url('https://d30y9cdsu7xlg0.cloudfront.net/png/196765-200.png');
+    background-size:21px 18px;
+    background-repeat:no-repeat;
+    background-position: 94% 10px;
+}
+
+.role {
+    margin:10px;
+    width:100%;
+
+}
+
+.personal {
+    margin:10px;
+    width:46%;
+    min-width:320px;
+    min-height:300px;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.personal .cat_textbox {
+    padding:10px;
+    border:1px solid #ddd;
+    font-size:12pt;
+    width:70%;
+    font-family: 'Oswald', sans-serif;
+    color:#575757;
+}
+
+.additional_info {
+    width:96%;
+    background:#fff;
+    padding:2%;
+    min-height:200px;
+}
+
+.additional_info textarea {
+    width:99%;
+    border:1px solid #ccc;
+    height:100px;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:12pt;
+    font-family: 'Oswald', sans-serif;
+    color:#575757;
+}
+
+.additional_info label {
+    font-size:13pt;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+.role .cat_textbox{
+    padding:10px;
+    border:1px solid #ccc;
+    font-size:12pt;
+    width:70%;
+    min-width:240px;
+    font-family: 'Oswald', sans-serif;
+    color:#575757;
+    background:#fff;
+}
+
+.personal-info-container{
+    background: #F2F4F5;
+    margin-bottom: 80px;
+}
+
+.top-bar button{
+    background: #032539;
+    color: #FAFDFF;
+    padding: 14px 18px;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Modal */
+
+.modal_wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+span.modal_icon{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.back-link a{
+    text-decoration: none;
+    color: #03989E;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+}
+
+.icon-wrapper p{
+    padding-top: 20px;
+}
+
+.modal_wrapper .shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.modal_wrapper .success_wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-800px);
+    background: #FAFDFF;
+    padding: 50px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    line-height: 200%;
+}
+
+.modal_wrapper .success_wrap .modal_icon{
+    width: 50px;
+    height: 50px;
+    background: #E31C3D;
+    color: #FAFDFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.modal_wrapper.active{
+    visibility: visible;
+}
+
+.modal_wrapper.active .shadow{
+    opacity: 1;
+}
+
+.modal_wrapper.active .success_wrap{
+    transform: translate(-50%,-50%);
+}
+
+.btns_wrap{
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.btns_wrap .common_btns{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.btns_wrap .common_btns button{
+    border: 0;
+    padding: 12px 15px;
+    background: #032539;
+    color: #FAFDFF;
+    width: 135px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.btns_wrap .common_btns button.btn_done:hover{
+    background: #284454;
+}
+

@@ -1,0 +1,556 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F4F5;
+    padding: 0 1.5rem;
+}
+
+.container{
+    width: 100%;
+}
+
+.main h2{
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: #032539;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+}
+
+span.blog-title{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.main h2 a{
+    text-decoration: none;
+    color: #03989E;
+}
+
+.blog-post{
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    align-items: center;
+    border-radius: .8rem;
+    margin: 10px auto;
+}
+
+.blog-post_info h3{
+    font-family: Urbanist, sans-serif;
+    font-size: 18px;
+    color: #032539;
+}
+
+.blog-post1_heading-3{
+    padding-bottom: 20px;
+}
+
+.blog-post_img{
+    height: 200px;
+    position: relative;
+}
+
+.blog-post_text a{
+    text-decoration: none;
+    color: #03989E;
+}
+
+.blog-post_info .follow-us_icons{
+    text-align: left;
+    padding-top: 20px;
+}
+
+.blog-post_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-post_img img::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.5);
+}
+
+.blog-post_date span{
+    display: block;
+    color: #03989E;
+    font-size: 14px;
+    font-weight: 400;
+    margin: .5rem 0;
+    font-family: Roboto, sans-serif;
+    padding-bottom: 10px;
+}
+
+.blog-post_info .blog-tags{
+    text-align: left;
+}
+
+.blog-tags .tags-title_left{
+    text-align: left;
+}
+
+.blog-post_title{
+    font-size: 2rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: #032539;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700px;
+}
+
+.blog-post_text{
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #032539;
+    font-weight: 400px;
+}
+
+.blog-post_cta{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #FAFDFF;
+    border-radius: 10px;
+    text-decoration: none;
+    background: #E31C3D;
+    font-family: Urbanist, sans-serif;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.blog-post_cta:hover{
+    background: #FAAF4E;
+}
+
+/* Right Column Blog Landing Page */
+
+.column-right{
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    align-items: center;
+    border-radius: .8rem;
+    margin: 10px auto;
+}
+
+.meet-author_img{
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    padding: 20px 0;
+}
+
+.meet-author_img img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: -20% 0;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.meet-author_img img::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.5);
+}
+
+.meet-author_name span{
+    display: block;
+    color: #03989E;
+    font-size: 14px;
+    font-weight: 700;
+    margin: .5rem 0;
+    font-family: Urbanist, sans-serif;
+    text-align: center;
+
+}
+
+.meet-author_text{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: #032539;
+    font-weight: 400;
+    text-align: center;
+}
+
+.follow-us_info h3{
+    text-align: center;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    color: #032539;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.follow-us_icons{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.follow-us_icons iconify-icon{
+    padding: 10px;
+}
+
+.category_info h3{
+    text-align: center;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    color: #032539;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.category_search-bar{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.category_search-bar select {
+    appearance:none;
+    height:40px;
+    padding:3px;
+    text-indent:10px;
+    font-size:12pt;
+    width:230px;
+    border-radius:5px;
+    font-family: 'Roboto', sans-serif;
+    background-image:url('https://d30y9cdsu7xlg0.cloudfront.net/png/196765-200.png');
+    background-size:21px 18px;
+    background-repeat:no-repeat;
+    background-position: 94% 10px;
+}
+
+.recent-posts_info{
+    text-align: center;
+}
+
+.recent-posts_info h3{
+    text-align: center;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    color: #032539;
+    font-size: 18px;
+    padding: 20px 0 10px 0;
+}
+
+.recent-posts_info span{
+    display: block;
+    color: #03989E;
+    font-size: 14px;
+    font-weight: 700;
+    margin: .5rem 0;
+    font-family: Urbanist, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.recent-posts_links{
+    padding-bottom: 20px;
+}
+
+.blog-tags{
+    text-align: center;
+}
+
+.blog-tags h3{
+    text-align: center;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    color: #032539;
+    font-size: 18px;
+    padding: 20px 0 10px 0;
+}
+
+ul.tags {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-end: 0px;
+}
+.tags {
+    list-style: none;
+    padding-left: 0;
+    display: inline-block;
+}
+
+.tags li {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.tags .tag {
+    background: rgba(0,0,0,.05);
+    color: rgba(0,0,0,.6);
+    border-radius: 3px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.tag:hover {
+    transition: all 0.2s;
+    background-color: #FA991C;
+    color: white;
+}
+
+.tag:hover::after {
+    border-left-color: #FA991C;
+}
+
+.tags a {
+    text-decoration: none;
+}
+
+.blog-footer{
+    text-align: center;
+}
+
+.blog-footer_copyright{
+    display: block;
+    color: #032539;
+    font-size: 14px;
+    font-weight: 700;
+    margin: .5rem 0;
+    font-family: Urbanist, sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+
+.blog-footer_copyright a{
+    text-decoration: none;
+    color: #FA991C;
+}
+
+.blog-post_logo{
+    display: flex;
+    justify-content: center;
+}
+
+.blog-post_logo img{
+    width: 250px;
+    margin: 40px 0 10px 0;
+}
+
+.main button{
+    border: none;
+    border-radius: 5px;
+    background: #FA991C;
+    color: #032539;
+    font-family: Urbanist, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 16px;
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.recent-posts_links span{
+    padding-bottom: 20px;
+}
+
+
+@media(min-width: 568px) {
+    body{
+        padding: 0 5.5rem;
+    }
+}
+
+@media(min-width: 768px) {
+    body{
+        padding: 0 1.5rem;
+    }
+
+    .container{
+        display: flex;
+    }
+
+    .column-right{
+        margin: 10px 0 10px 10px;
+        width: 200px;
+        height: 1300px;
+    }
+
+    .category_search-bar select{
+        width: 167px;
+    }
+
+    p.blog-post_text{
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+}
+
+@media(min-width: 968px) {
+    .blog-post{
+        display: flex;
+    }
+
+    .blog-post_img img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .blog-post_img{
+        height: 300px;
+    }
+
+    body{
+        padding: 0 1.5rem;
+    }
+
+    .blog-post_logo img{
+        width: 375px;
+    }
+
+    .main h2{
+        font-size: 36px;
+    }
+
+    .tags .tag{
+        padding:10px 15px;
+    }
+
+    .recent-posts_links span{
+        font-size: 18px;
+    }
+
+    .column-right{
+        padding: 20px;
+        width: 600px;
+        height: 1600px;
+    }
+
+    .column-left{
+        margin-left: 1px;
+    }
+
+    .blog-post_title{
+        font-size: 1.8rem;
+        margin: 1.5rem 0 2rem;
+    }
+
+    .blog-post_info{
+        padding: 20px;
+    }
+
+    .blog-post_info h3{
+        font-size: 20px;
+    }
+
+    p.blog-post_text{
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    h1.blog-post_title{
+        font-size: 28px;
+    }
+
+    .meet-author_text{
+        font-size: 1.6rem;
+    }
+
+    .meet-author_name span{
+        font-size: 20px;
+    }
+
+}
+
+@media(min-width: 1200px) {
+
+    body{
+        padding: 0 4.5rem;
+    }
+
+    .meet-author_name span{
+        font-size: 20px;
+    }
+
+    p.blog-post_text{
+        font-size: 20px;
+    }
+
+    .blog-post_date span{
+        font-size: 20px;
+    }
+
+    .tags .tag{
+        padding: 18px 26px;
+        font-size: 18px;
+    }
+
+    .blog-footer_info button{
+        padding: 16px 24px;
+        font-size: 16px;
+    }
+
+    .blog-footer_copyright span{
+        font-size: 18px;
+    }
+
+    .blog-post_info h3{
+        font-size: 24px;
+    }
+
+    .main h2{
+        font-size: 50px;
+    }
+
+    .blog-post_logo img{
+        width: 600px;
+    }
+
+    .column-right{
+        height: 2100px;
+    }
+
+    .blog-post_cta{
+        font-size: 18px;
+        padding: 18px 24px;
+    }
+
+}
